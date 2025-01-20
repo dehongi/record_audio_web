@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio Recorder</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .controls {
+            margin: 20px 0;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        #audioPreview {
+            width: 100%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Audio Recorder</h1>
+        <div class="controls">
+            <button id="recordButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <button id="uploadButton" disabled>Upload Recording</button>
+        </div>
+        <audio id="audioPreview" controls></audio>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="audio-recorder.js"></script>
+</body>
+
+</html>
